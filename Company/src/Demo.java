@@ -15,7 +15,7 @@ public class Demo {
 		Employee hose = new Employee("hose","0881235956",800);
 		Employee metodi = new Employee("Metodi","0881239616",998);
 		
-		myCompany.addEmployee(0, ivan);
+		myCompany.addEmployee(1, ivan);
 		myCompany.addEmployee(0, stefan);
 		myCompany.addEmployee(0, krisi);
 		myCompany.addEmployee(0, sara);
