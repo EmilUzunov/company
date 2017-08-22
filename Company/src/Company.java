@@ -8,8 +8,15 @@ public class Company {
 	
 	public Company() {
 
-		this.branches = new ArrayList<Set<Employee>>();
-		branches.set(1, new TreeSet());
+		this.branches = new ArrayList<Set<Employee>>(20);
+		TreeSet<Employee> elements = new TreeSet<Employee>();
+		for (int i = 0; i < 10; i++) {
+			branches.add(i, elements);
+		}
+//		Employee ivan = new Employee("Ivan","0881234456",900);
+//		elements.add(ivan);
+		branches.set(0, elements);
+		
 		
 	}
 	
@@ -18,6 +25,11 @@ public class Company {
 	}
 	public void createBranch(String name){
 		
+	}
+
+	@Override
+	public String toString() {
+		return "Company [branches=" + branches + "]";
 	}
 	
 	

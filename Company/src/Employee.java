@@ -1,5 +1,4 @@
-
-public class Employee {
+public class Employee implements Comparable {
 	
 	private String name;
 	private String phone;
@@ -40,6 +39,21 @@ public class Employee {
 		if(salary>0){
 		this.salary = salary;
 		}
+	}
+
+
+	
+
+
+	@Override
+	public int compareTo(Object o) {
+		return ((Employee)this).getSalary()-((Employee)o).getSalary();
+	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", phone=" + phone + ", salary=" + salary + "]";
 	}
 	
 	

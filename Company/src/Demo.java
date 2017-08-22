@@ -1,3 +1,4 @@
+import java.util.Iterator;
 
 public class Demo {
 
@@ -15,15 +16,17 @@ public class Demo {
 		Employee hose = new Employee("hose","0881235956",800);
 		Employee metodi = new Employee("Metodi","0881239616",998);
 		
-		myCompany.addEmployee(1, ivan);
+		myCompany.addEmployee(0, ivan);
 		myCompany.addEmployee(0, stefan);
 		myCompany.addEmployee(0, krisi);
-		myCompany.addEmployee(0, sara);
-		myCompany.addEmployee(0, marta);
-		myCompany.addEmployee(0, dani);
-		myCompany.addEmployee(0, pedro);
-		myCompany.addEmployee(0, hose);
-		myCompany.addEmployee(0, metodi);
+		myCompany.addEmployee(1, sara);
+		myCompany.addEmployee(1, marta);
+		myCompany.addEmployee(1, dani);
+		myCompany.addEmployee(2, pedro);
+		myCompany.addEmployee(2, hose);
+		myCompany.addEmployee(2, metodi);
+		
+		System.out.println(myCompany.toString());
 		
 	}
 
